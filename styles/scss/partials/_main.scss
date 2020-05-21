@@ -39,3 +39,47 @@ main section:nth-of-type(even){
         width: calc((100% / 3) - 25px);
     }
 }
+
+// articles section
+
+.articles {
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-around;
+    article {
+        // width: calc(50% - 50px);
+        width: 50%;
+        padding-left: 20px;
+        h2 {
+            margin: 0px;
+        }
+        > div {
+            display: flex;
+        }
+    }
+
+    .articleContainerTop {
+        padding: 80px 0px 50px 0px;
+    }
+
+   .articleContainerBottom {
+        padding-bottom: 140px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 50px;
+        height: 50px;
+        color: $lightColour;
+        font-size: 3rem;
+        background: $secondaryColour;
+        border-radius: 50%;
+        position: relative;
+        right: 20px;
+    }
+
+}

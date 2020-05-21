@@ -427,3 +427,61 @@ main section:nth-of-type(even) {
 .gallery picture {
   width: calc((100% / 3) - 25px);
 }
+
+.articles {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.articles article {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.articles article h2 {
+  margin: 0px;
+}
+
+.articles article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.articles .articleContainerTop {
+  padding: 80px 0px 50px 0px;
+}
+
+.articles .articleContainerBottom {
+  padding-bottom: 140px;
+}
+
+.articles .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 50px;
+  height: 50px;
+  color: #FAFFFE;
+  font-size: 3rem;
+  background: #555F02;
+  border-radius: 50%;
+  position: relative;
+  right: 20px;
+}
