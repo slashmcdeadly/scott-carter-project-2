@@ -1,0 +1,11 @@
+main section:nth-of-type(odd){
+    background-color: $secondaryDarkColour;
+}
+
+main section:nth-of-type(even){
+    background-color: $darkColour;
+}
+
+.about div {
+    padding-top: 150px;
+}

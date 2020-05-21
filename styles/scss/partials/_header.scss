@@ -1,0 +1,51 @@
+header {
+    height: 85vh;
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    background-attachment: fixed;
+    h1{
+        margin: 0;
+    }
+    .imageContainer {
+        max-width: 40%;
+        position: relative;
+        top: 50px;
+    }
+    .welcome {
+        max-width: 40%;
+        margin-left: 40px;
+    }
+}
+
+.topNav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topNav h2,
+.topNav nav {
+    width: 50%;
+}
+
+.topNav ul li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header section:last-of-type{
+    display: flex;
+    height: 100%;
+    .imageContainer {
+        align-self: flex-end;
+        img {
+            filter: sepia(60%);
+        }
+    }
+    .welcome {
+        position: relative;
+        top: 170px;
+    }
+}
