@@ -259,6 +259,8 @@ h2 {
   font-size: 45px;
   color: #FFC600;
   font-family: "Dokdo", cursive;
+  letter-spacing: 4.9px;
+  line-height: 58px;
 }
 
 h3 {
@@ -280,6 +282,23 @@ h3 {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+button {
+  height: 50px;
+  border: 0;
+  background: #555F02;
+  font-family: "Dokdo", cursive;
+  font-size: 3.5rem;
+  color: #FAFFFE;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #FAFFFE;
 }
 
 header {
@@ -362,6 +381,49 @@ main section:nth-of-type(even) {
   background-color: #262725;
 }
 
+.about {
+  min-height: 80vh;
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .about div {
-  padding-top: 150px;
+  width: calc(70% - 75px);
+}
+
+.about picture {
+  width: calc(30% - 75px);
+  -webkit-box-shadow: -20px 20px 0 #555F02;
+          box-shadow: -20px 20px 0 #555F02;
+  position: relative;
+  bottom: 20px;
+}
+
+.about h2 {
+  margin-bottom: 0px;
+}
+
+.gallery {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery picture {
+  width: calc((100% / 3) - 25px);
 }

@@ -10,6 +10,8 @@ h1 {
 
 h2 {
     @include titleStyles(45);
+    letter-spacing: 4.9px;
+    line-height: 58px;
 }
 
 h3 {
@@ -31,4 +33,21 @@ h3 {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+button {
+    height: 50px;
+    border: 0;
+    background: $secondaryColour;
+    font-family: $primaryFont;
+    font-size: 3.5rem;
+    color: $lightColour;
+}
+
+p   {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: $lightColour;
 }

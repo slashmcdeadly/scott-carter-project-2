@@ -6,6 +6,36 @@ main section:nth-of-type(even){
     background-color: $darkColour;
 }
 
-.about div {
-    padding-top: 150px;
+// about section
+
+.about {
+    min-height: 80vh;
+    padding-bottom: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    div {
+        width: calc(70% - 75px)
+    }
+    picture {
+        width: calc(30% - 75px);
+        box-shadow: -20px 20px 0 $secondaryColour;
+        position: relative;
+        bottom: 20px;
+    }
+    h2 {
+        margin-bottom: 0px;
+    }
+}
+
+// gallery section
+
+.gallery {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    picture {
+        width: calc((100% / 3) - 25px);
+    }
 }
