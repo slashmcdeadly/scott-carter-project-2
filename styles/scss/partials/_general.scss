@@ -33,6 +33,10 @@ h3 {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    &:hover {
+        transition: all .5s;
+        color: $mainColour;
+    }
 }
 
 button {
@@ -42,7 +46,13 @@ button {
     font-family: $primaryFont;
     font-size: 3.5rem;
     color: $lightColour;
+    &:hover {
+        color: $mainColour;
+        transition: all .5s;
+    }
 }
+
+
 
 p   {
     font-family: $secondaryFont;
