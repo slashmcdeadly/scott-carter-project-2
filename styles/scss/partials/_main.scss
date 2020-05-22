@@ -40,7 +40,7 @@ main section:nth-of-type(even){
     }
 }
 
-// articles section
+// articles section #1
 
 .articles {
     min-height: 70vh;
@@ -59,27 +59,92 @@ main section:nth-of-type(even){
             display: flex;
         }
     }
+}
 
-    .articleContainerTop {
-        padding: 80px 0px 50px 0px;
-    }
+.articleContainerTop {
+    padding: 80px 0px 50px 0px;
+}
 
-   .articleContainerBottom {
-        padding-bottom: 140px;
-    }
+.articleContainerBottom {
+    padding-bottom: 140px;
+}
 
-    .icons {
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    height: 50px;
+    color: $lightColour;
+    font-size: 3rem;
+    background: $secondaryColour;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+}
+
+// articles section #2
+
+.articlesTwo {
+    min-height: 95vh;
+    position: relative;
+    div {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 50px;
-        height: 50px;
-        color: $lightColour;
-        font-size: 3rem;
-        background: $secondaryColour;
-        border-radius: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
         position: relative;
-        right: 20px;
+        min-height: 90vh;
     }
+    article {
+        max-width: 40%;
+    }
+    picture {
+        width: 42%;
+    }
+}
 
+.articlesTwo picture:first-of-type {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    img {
+        box-shadow: 20px 20px 0 $mainColour;
+    }
+}
+
+.articlesTwo picture ~ picture {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    border: 0;
+    img {
+        box-shadow: -20px 20px 0 $mainColour;
+    }
+}
+
+.articlesTwo article:first-of-type {
+    align-self: flex-end;
+    margin-top: 50px;
+}
+
+.articlesTwo article + article {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    p {  
+        align-self: flex-start;
+    }
+}
+
+.articlesTwo h2 {
+    margin: 0px;
+}
+
+.articlesTwo p {
+    letter-spacing: 2px;
+    margin: 0px 0px 30px 0px;
+    width: 90%;
 }

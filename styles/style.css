@@ -458,15 +458,15 @@ main section:nth-of-type(even) {
   display: flex;
 }
 
-.articles .articleContainerTop {
+.articleContainerTop {
   padding: 80px 0px 50px 0px;
 }
 
-.articles .articleContainerBottom {
+.articleContainerBottom {
   padding-bottom: 140px;
 }
 
-.articles .icons {
+.icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,4 +484,94 @@ main section:nth-of-type(even) {
   border-radius: 50%;
   position: relative;
   right: 20px;
+}
+
+.articlesTwo {
+  min-height: 95vh;
+  position: relative;
+}
+
+.articlesTwo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  min-height: 90vh;
+}
+
+.articlesTwo article {
+  max-width: 40%;
+}
+
+.articlesTwo picture {
+  width: 42%;
+}
+
+.articlesTwo picture:first-of-type {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.articlesTwo picture:first-of-type img {
+  -webkit-box-shadow: 20px 20px 0 #FFC600;
+          box-shadow: 20px 20px 0 #FFC600;
+}
+
+.articlesTwo picture ~ picture {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  border: 0;
+}
+
+.articlesTwo picture ~ picture img {
+  -webkit-box-shadow: -20px 20px 0 #FFC600;
+          box-shadow: -20px 20px 0 #FFC600;
+}
+
+.articlesTwo article:first-of-type {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 50px;
+}
+
+.articlesTwo article + article {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.articlesTwo article + article p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.articlesTwo h2 {
+  margin: 0px;
+}
+
+.articlesTwo p {
+  letter-spacing: 2px;
+  margin: 0px 0px 30px 0px;
+  width: 90%;
 }
