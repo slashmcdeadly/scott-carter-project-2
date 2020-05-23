@@ -20,11 +20,11 @@ h3 {
     font-family: $secondaryFont;
     font-weight: 300;
     margin: 0;
-    padding-left: 15px;;
-    letter-spacing: 3px;
-    position: relative;
-    top: 20px;
 }
+
+span {
+    font-weight: bold;
+}  
 
 .topNav li a {
     font-family: $secondaryFont;

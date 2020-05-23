@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -269,10 +270,10 @@ h3 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   margin: 0;
-  padding-left: 15px;
-  letter-spacing: 3px;
-  position: relative;
-  top: 20px;
+}
+
+span {
+  font-weight: bold;
 }
 
 .topNav li a {
@@ -313,7 +314,7 @@ p {
   color: #FAFFFE;
 }
 
-header {
+.mainHead {
   height: 85vh;
   background-image: url(../assets/home-image-1.jpg);
   background-size: cover;
@@ -321,19 +322,26 @@ header {
   background-attachment: fixed;
 }
 
-header h1 {
+.mainHead h1 {
   margin: 0;
 }
 
-header .imageContainer {
+.mainHead .imageContainer {
   max-width: 40%;
   position: relative;
   top: 50px;
 }
 
-header .welcome {
+.mainHead .welcome {
   max-width: 40%;
   margin-left: 40px;
+}
+
+.mainHead h3 {
+  padding-left: 15px;
+  letter-spacing: 3px;
+  position: relative;
+  top: 20px;
 }
 
 .topNav {
@@ -363,24 +371,24 @@ header .welcome {
           justify-content: space-evenly;
 }
 
-header section:last-of-type {
+.mainHead section:last-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 
-header section:last-of-type .imageContainer {
+.mainHead section:last-of-type .imageContainer {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-header section:last-of-type .imageContainer img {
+.mainHead section:last-of-type .imageContainer img {
   -webkit-filter: sepia(60%);
           filter: sepia(60%);
 }
 
-header section:last-of-type .welcome {
+.mainHead section:last-of-type .welcome {
   position: relative;
   top: 170px;
 }
@@ -622,4 +630,111 @@ footer p {
   margin: 0;
   text-align: center;
   padding: 5px 0px;
+}
+
+.blogHead {
+  min-height: 70vh;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+}
+
+.blogHead .topNav {
+  height: 10vh;
+}
+
+.blogHead h1 {
+  font-size: 105px;
+  line-height: 69px;
+  letter-spacing: 10.9px;
+  position: relative;
+  top: 150px;
+}
+
+.blogPost {
+  position: relative;
+}
+
+.blogPost > picture, .blogPost article {
+  position: relative;
+  bottom: 170px;
+}
+
+.blogPost > picture img {
+  width: 60%;
+  -webkit-box-shadow: 20px 20px 0 #555F02;
+          box-shadow: 20px 20px 0 #555F02;
+}
+
+.blogPost article {
+  width: calc(60% + 20px);
+  padding-left: 12%;
+  border-right: 7px solid #555F02;
+  border-bottom: 7px solid #555F02;
+}
+
+.blogPost article h2 {
+  margin: 0px 0px 0px 0px;
+  padding-top: 100px;
+}
+
+.blogPost article p {
+  padding-right: 80px;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.blogPost article:last-of-type {
+  padding-bottom: 40px;
+}
+
+.blogPost article h3 {
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 80px;
+}
+
+.blogPost article h3 span {
+  font-weight: bold;
+}
+
+aside {
+  width: calc(20% + 20px);
+  position: absolute;
+  right: 0;
+  top: 150px;
+  padding-left: 20px;
+  background-color: #555F02;
+}
+
+aside img {
+  position: relative;
+  bottom: 20px;
+}
+
+aside h3 {
+  font-family: "Dokdo", cursive;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0px 0px 20px 10px;
+}
+
+aside ul li::before {
+  content: "•";
+  color: #FFC600;
+  font-size: 2rem;
+  padding-right: 20px;
+}
+
+aside ul li {
+  padding-bottom: 10px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2.5px;
 }

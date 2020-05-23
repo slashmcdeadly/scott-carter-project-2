@@ -1,4 +1,4 @@
-header {
+.mainHead {
     height: 85vh;
     background-image: url(../assets/home-image-1.jpg);
     background-size: cover;
@@ -15,6 +15,12 @@ header {
     .welcome {
         max-width: 40%;
         margin-left: 40px;
+    }
+    h3 {
+        padding-left: 15px;
+        letter-spacing: 3px;
+        position: relative;
+        top: 20px;
     }
 }
 
@@ -35,7 +41,7 @@ header {
     justify-content: space-evenly;
 }
 
-header section:last-of-type{
+.mainHead section:last-of-type{
     display: flex;
     height: 100%;
     .imageContainer {

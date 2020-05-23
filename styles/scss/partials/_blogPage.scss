@@ -1,0 +1,97 @@
+// Blog Page Title Page
+
+.blogHead {
+    min-height: 70vh;
+    background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    .topNav {
+        height: 10vh;
+    }
+    h1 {
+        font-size: 105px;
+        line-height: 69px;
+        letter-spacing: 10.9px;
+        position: relative;
+        top: 150px;
+    }
+}
+
+// blog post section
+
+.blogPost {
+    position: relative;
+}
+
+.blogPost > picture, .blogPost article {
+    position: relative;
+    bottom: 170px;
+}
+
+.blogPost > picture img {
+    width: 60%;
+    box-shadow: 20px 20px 0 $secondaryColour;
+}
+
+.blogPost article {
+    width: calc(60% + 20px);
+    padding-left: 12%;
+    border-right: 7px solid $secondaryColour;
+    border-bottom: 7px solid $secondaryColour;
+    h2 {
+        margin: 0px 0px 0px 0px;
+        padding-top: 100px;
+    }
+    p {
+        padding-right: 80px;
+        padding-bottom: 10px;
+        letter-spacing: 3px;
+    }
+    &:last-of-type {
+        padding-bottom: 40px;
+    }
+    h3 {
+        font-style: italic; 
+        font-size: 2rem;
+        margin-bottom: 80px;
+        span {
+            font-weight: bold;
+        }  
+    }
+}
+
+aside {
+    width: calc(20% + 20px);
+    position: absolute;
+    right: 0;
+    top: 150px;
+    padding-left: 20px;
+    background-color: $secondaryColour;
+    img {
+        position: relative;
+        bottom: 20px;
+    }
+    h3 {
+        font-family: $primaryFont;
+    }
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0px 0px 20px 10px;
+    li::before {
+        content: "•";
+        color: $mainColour;
+        font-size: 2rem;
+        padding-right: 20px;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+        font-family: $secondaryFont;
+        font-size: 2rem;
+        letter-spacing: 2.5px;
+    }
+} 

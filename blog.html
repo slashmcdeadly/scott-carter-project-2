@@ -3,63 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e1f69d068.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <title>Blog</title>
 </head>
 <body>
-    <header>
-        <!-- top navigation area -->
-        <section class="topNav">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                        <a href="#about">About</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <h2>Mindn'Soul</h2>
-        </section>
-
-        <section>
-
-            <div>
-                <picture>
-                    <img src="./assets/post-image.jpg" alt="a gong sits woefully ungonged">
-                </picture>
+    <header class="blogHead">
+        <div class="wrapper">
+            <!-- top navigation area -->
+            <section class="topNav">
+                <h2>Mindn'Soul</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                            <a href="#about">About</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav> 
+            </section>
             
-                <article>
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="blogPost">   
+            <picture>
+                <img src="./assets/post-image.jpg" alt="a gong sits woefully ungonged">
+            </picture>
+            <article>
+                <div>
                     <h2>Come and discover our space</h2>
-                    <h3>Monday, May 25th by<span>Sharon</span></h3>
+                    <h3>Monday, May 25th by<span> Sharon</span></h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit iure consequatur autem expedita! Ab necessitatibus architecto adipisci porro itaque provident assumenda praesentium laboriosam inventore hic, aliquid unde explicabo harum, quo tempora. Quia explicabo sapiente in blanditiis? </p>
-                        
-                    
-                    <p>Tenetur atque ipsa autem asperiores ullam quis reprehenderit nisi voluptatum eveniet dolorum officia consectetur ipsum molestiae necessitatibus eos fugit, minima iure doloremque cumque placeat perferendis blanditiis sed fugiat deserunt. Similique maiores consequuntur odio tempora rem doloremque, odit provident commodi? 
-                    </p>    
-                    
+                                    
+                                    
+                    <p>Tenetur atque ipsa autem asperiores ullam quis reprehenderit nisi voluptatum eveniet dolorum necessitatibus eos fugit, minima iure doloremque cumque placeat perferendis blanditiis sed fugiat deserunt. Similique maiores consequuntur odio tempora rem doloremque, odit provident commodi? </p>    
+                                    
                     <p>A, vel dolore. Quod fuga consequatur quo consectetur vitae? Repudiandae, laborum. Esse rem ab quos nisi obcaecati repudiandae alias! Optio veritatis veniam eius ipsa quia harum odio voluptas error, quas animi. Recusandae nihil nesciunt aliquid doloremque officiis illo minima distinctio debitis accusantium amet! </p>
+                                    
+                    <p>Impedit aliquam voluptate sit asperiores, nihil ullam velit aliquid iste eveniet reprehenderit, dolor voluptates sed exercitationem. Error nam tempore, consectetur corporis exercitationem dolores consequatur? Voluptates?</p>
                     
-                    <p>Impedit aliquam voluptate sit asperiores, nihil ullam velit aliquid iste eveniet reprehenderit, dolor voluptates sed exercitationem, laboriosam qui sapiente iure ea nobis officia id repellat laborum fuga quam. Nisi, laborum ipsa. Error nam tempore, consectetur corporis exercitationem dolores consequatur? Voluptates?</p>
-                </article>
-
-            </div>
-
+                </div>   
+            </article>
+            
             <aside>
-
+                        
                 <picture>
                     <img src="./assets/sidebar-image.jpg" alt="rocks standing on one another, each one smaller than the last">
                 </picture>
-
+                        
                 <div>
-
+                            
                     <h3>Our mission</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nobis. Nemo, animi porro modi ab sint error? Laudantium, fuga distinctio.</p>
-
+                            
                     <div>
                         <h3>Recent posts</h3>
-
+                                
                         <ul>
                             <li><a href="#">Lorem ipsum dolor sit.</a></li>
                             <li><a href="#">Lorem ipsum dolor sit.</a></li>
@@ -67,16 +73,44 @@
                             <li><a href="#">Lorem ipsum dolor sit.</a></li>
                         </ul>
                     </div>
-
+                            
                 </div>
+                        
+            </aside>          
+        </section>
 
-            </aside>
+        <section class="comments">
+            <div class="wrapper">
+                <h2>Comments</h2>
+    
+                <div class="comment1">
+                    <picture>
+                        <img src="./assets/comment-image.jpg" alt="comment image of a man">
+                    </picture>
+                    <div>
+                        <h3>Tuesday October 7th, 2019 by <span>Davin</span> </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam soluta dignissimos aut sunt commodi placeat et adipisci aperiam beatae explicabo, autem exercitationem tempore rerum cumque! Architecto dicta id adipisci animi?</p>
+    
+                    </div>
+                </div>
+    
+                <div class="comment2">
+                    <picture>
+                        <img src="./assets/comment-image2.jpg" alt="a comment image of zebras">
+                    </picture>
+                    <div>
+                        <h3>Wednesday October 8th, 2019 by <span>Lisa</span></h3>
+                        <p>Quibusdam soluta dignissimos aut sunt commodi placeat et adipisci aperiam beatae explicabo, autem exercitationem tempore rerum cumque! Architecto dicta id adipisci animi? </p>
+                    </div>
+                </div>
+            </div>
+
 
 
         </section>
-
-
-    </header>
-    
-</body>
-</html>
+        
+    </main>
+        
+        
+    </body>
+    </html>
