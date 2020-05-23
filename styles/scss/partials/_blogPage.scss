@@ -73,7 +73,7 @@ aside {
     }
 }
 
-aside ul {
+aside.ourMission ul {
     list-style-type: none;
     padding: 0px 0px 20px 10px;
     li::before {
@@ -147,8 +147,8 @@ aside ul {
     }
 }
 
-.commentForm input[type=email], 
-.commentForm input[type=text] {
+input[type=email], 
+input[type=text] {
     width: calc(50% - 25px);
     margin-bottom: 50px;
     background-color: $secondaryDarkColour;
@@ -157,8 +157,8 @@ aside ul {
     height: 80px;
 }
 
-.commentForm input::placeholder, 
-.commentForm textarea::placeholder {
+input::placeholder, 
+textarea::placeholder {
     font-size: 2rem;
     font-family: $secondaryFont;
     font-weight: 300;
@@ -168,11 +168,11 @@ aside ul {
     padding-left: 50px;
 }
 
-.commentForm textarea::placeholder {
+textarea::placeholder {
     padding-top: 50px;
 }
 
-.commentForm textarea {
+textarea {
     width: 100%;
     height: 220px;
     background-color: $secondaryDarkColour;
@@ -181,7 +181,7 @@ aside ul {
     margin-bottom: 40px;
 }
 
-.commentForm button {
+button[type=submit] {
     width: 100%;
 }
 
