@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Contact</title>
 </head>
-<body>
-    <header class="contactHead">
+<body class="contactPage">
+    <header >
         <!-- top navigation area -->
         <section class="topNav wrapper">
             <h2>Mindn'Soul</h2>
@@ -31,59 +31,60 @@
         </div>
     </header>
 
-    <main class="wrapper">
-        <section >
-            <form action="" class="wrapper">
-                <fieldset>
-
-                    <div>
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
+    <main>
+        <div class="wrapper">
+            <section class="commentForm ">
+                <form action="">
+                    <fieldset>
+                        <div>
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+            
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email address">
+                        </div>
+                        
+                        <div>
+                            <textarea name="comment" id="comment" placeholder="Message"></textarea>
+                        </div>
+    
+                        <button type="submit">Submit</button>
         
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email address">
-                    </div>
-                    
-                    <div>
-                        <textarea name="comment" id="comment" placeholder="Comment"></textarea>
-                    </div>
-
-                    <button type="submit">Post Comment</button>
-    
-    
-                </fieldset>
-    
-            </form>
-
-        </section>
-
-        <aside class="contactInfo">
-            <ul class=hiddenSocialMedia"> 
-                <li>
-                    <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a href="http://snapchat.com"><i class="fab fa-snapchat-ghost"></i></a>
-                </li>
-                <li>
-                    <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
-                </li>
         
-            </ul>
-
-            <div>
-                <p>info@email.com</p>
-                <p>123-456-7890</p>
-                <p>123 Queen Street West</p>
-                <p>Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </div>
-
-        </aside>
+                    </fieldset>
+        
+                </form>
+    
+            </section>
+    
+            <aside class="contactInfo">
+                <ul class=hiddenSocialMedia"> 
+                    <li>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://snapchat.com"><i class="fab fa-snapchat-ghost"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                    </li>
+            
+                </ul>
+    
+                <div>
+                    <p>info@email.com</p>
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West</p>
+                    <p>Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+    
+            </aside>
+        </div>
 
     </main>
     

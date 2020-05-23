@@ -694,7 +694,7 @@ footer p {
   margin-bottom: 80px;
 }
 
-aside {
+aside.ourMission {
   width: calc(20% + 20px);
   position: absolute;
   right: 0;
@@ -703,12 +703,12 @@ aside {
   background-color: #555F02;
 }
 
-aside img {
+aside.ourMission img {
   position: relative;
   bottom: 20px;
 }
 
-aside h3 {
+aside.ourMission h3 {
   font-family: "Dokdo", cursive;
 }
 
@@ -890,13 +890,119 @@ button[type=submit] {
   width: 100%;
 }
 
-.contactHead {
+.contactPage header {
   min-height: 70vh;
   background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
 }
 
-.contactHead div h2 {
+.contactPage header div h2 {
   font-size: 105px;
   color: #FFC600;
   font-family: "Dokdo", cursive;
+  letter-spacing: 10.9px;
+}
+
+.contactPage header div {
+  min-height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contactPage main {
+  background: #1E140E;
+}
+
+.contactPage main > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contactPage main section {
+  width: 70%;
+}
+
+.contactPage fieldset,
+.contactPage input,
+.contactPage textarea {
+  background: #262725;
+}
+
+.contactPage fieldset::-webkit-input-placeholder,
+.contactPage input::-webkit-input-placeholder,
+.contactPage textarea::-webkit-input-placeholder {
+  padding: 40px 0px 0px 30px;
+}
+
+.contactPage fieldset:-ms-input-placeholder,
+.contactPage input:-ms-input-placeholder,
+.contactPage textarea:-ms-input-placeholder {
+  padding: 40px 0px 0px 30px;
+}
+
+.contactPage fieldset::-ms-input-placeholder,
+.contactPage input::-ms-input-placeholder,
+.contactPage textarea::-ms-input-placeholder {
+  padding: 40px 0px 0px 30px;
+}
+
+.contactPage fieldset::placeholder,
+.contactPage input::placeholder,
+.contactPage textarea::placeholder {
+  padding: 40px 0px 0px 30px;
+}
+
+.contactPage fieldset {
+  padding: 70px;
+  width: 100%;
+  -webkit-box-shadow: 20px 20px 0 #FFC600;
+          box-shadow: 20px 20px 0 #FFC600;
+  position: relative;
+  bottom: 150px;
+}
+
+.contactPage fieldset textarea {
+  height: 260px;
+}
+
+.contactPage aside {
+  width: 20%;
+}
+
+.contactPage aside p {
+  margin: 10px 0;
+}
+
+.contactPage aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.contactPage aside p:first-of-type {
+  padding-bottom: 30px;
+}
+
+.contactPage ul li {
+  padding-right: 20px;
+}
+
+.contactPage ul li a {
+  color: #mainColour;
+  font-size: 2.5rem;
+}
+
+.contactPage ul li a i {
+  color: #FFC600;
 }
