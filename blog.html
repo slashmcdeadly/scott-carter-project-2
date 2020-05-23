@@ -79,16 +79,16 @@
             </aside>          
         </section>
 
-        <section class="comments">
+        <div class="comments">
             <div class="wrapper">
-                <h2>Comments</h2>
+                <h2>Comments:</h2>
     
                 <div class="comment1">
                     <picture>
                         <img src="./assets/comment-image.jpg" alt="comment image of a man">
                     </picture>
                     <div>
-                        <h3>Tuesday October 7th, 2019 by <span>Davin</span> </h3>
+                        <p>Tuesday October 7th, 2019 by <span>Davin</span> </p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam soluta dignissimos aut sunt commodi placeat et adipisci aperiam beatae explicabo, autem exercitationem tempore rerum cumque! Architecto dicta id adipisci animi?</p>
     
                     </div>
@@ -99,7 +99,7 @@
                         <img src="./assets/comment-image2.jpg" alt="a comment image of zebras">
                     </picture>
                     <div>
-                        <h3>Wednesday October 8th, 2019 by <span>Lisa</span></h3>
+                        <p>Wednesday October 8th, 2019 by <span>Lisa</span></p>
                         <p>Quibusdam soluta dignissimos aut sunt commodi placeat et adipisci aperiam beatae explicabo, autem exercitationem tempore rerum cumque! Architecto dicta id adipisci animi? </p>
                     </div>
                 </div>
@@ -107,10 +107,39 @@
 
 
 
-        </section>
+        </div>
+
+        <div class="commentForm">
+            <form action="" class="wrapper">
+                <fieldset>
+
+                    <div>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+        
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                    </div>
+                    
+                    <div>
+                        <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+                    </div>
+
+                    <button type="submit">Post Comment</button>
+    
+    
+                </fieldset>
+    
+            </form>
+        </div>
         
     </main>
-        
+
+    <footer>
+        <div>
+            <p>Copyright &copy; 2019 Hacker You</p>
+        </div>
+    </footer>
         
     </body>
     </html>

@@ -652,6 +652,7 @@ footer p {
 
 .blogPost {
   position: relative;
+  max-height: 1600px;
 }
 
 .blogPost > picture, .blogPost article {
@@ -691,10 +692,6 @@ footer p {
   font-style: italic;
   font-size: 2rem;
   margin-bottom: 80px;
-}
-
-.blogPost article h3 span {
-  font-weight: bold;
 }
 
 aside {
@@ -737,4 +734,158 @@ aside ul li a {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   letter-spacing: 2.5px;
+}
+
+.comments {
+  background-color: #1E140E;
+  min-height: 70vh;
+}
+
+.comments h2 {
+  color: #FAFFFE;
+  margin-top: 0px;
+}
+
+.comments > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 70vh;
+}
+
+.comment1, .comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 63%;
+}
+
+.comment1 picture, .comment2 picture {
+  width: 15%;
+}
+
+.comment1 picture img, .comment2 picture img {
+  padding-right: 30px;
+}
+
+.comment1 div, .comment2 div {
+  width: 82%;
+}
+
+.comment1 div p:first-of-type, .comment2 div p:first-of-type {
+  margin-top: 0;
+  color: #FFC600;
+}
+
+.commentForm {
+  background-color: #1E140E;
+  min-height: 65vh;
+}
+
+.commentForm fieldset {
+  border: 0;
+  margin: 0;
+  width: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commentForm fieldset div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentForm input[type=email],
+.commentForm input[type=text] {
+  width: calc(50% - 25px);
+  margin-bottom: 50px;
+  background-color: #1E140E;
+  border: 0;
+  border-bottom: 2px solid #FFC600;
+  height: 80px;
+}
+
+.commentForm input::-webkit-input-placeholder,
+.commentForm textarea::-webkit-input-placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #FAFFFE;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding-left: 50px;
+}
+
+.commentForm input:-ms-input-placeholder,
+.commentForm textarea:-ms-input-placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #FAFFFE;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding-left: 50px;
+}
+
+.commentForm input::-ms-input-placeholder,
+.commentForm textarea::-ms-input-placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #FAFFFE;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding-left: 50px;
+}
+
+.commentForm input::placeholder,
+.commentForm textarea::placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #FAFFFE;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding-left: 50px;
+}
+
+.commentForm textarea::-webkit-input-placeholder {
+  padding-top: 50px;
+}
+
+.commentForm textarea:-ms-input-placeholder {
+  padding-top: 50px;
+}
+
+.commentForm textarea::-ms-input-placeholder {
+  padding-top: 50px;
+}
+
+.commentForm textarea::placeholder {
+  padding-top: 50px;
+}
+
+.commentForm textarea {
+  width: 100%;
+  height: 220px;
+  background-color: #1E140E;
+  border: 2px solid #FFC600;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.commentForm button {
+  width: 100%;
 }
