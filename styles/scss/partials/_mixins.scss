@@ -1,5 +1,5 @@
 @mixin titleStyles($textSize){
-    font-size: $textSize * 1px;
+    font-size: $textSize * 1vw;
     color: $mainColour;
     font-family: $primaryFont;
 }

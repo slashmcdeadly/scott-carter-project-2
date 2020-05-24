@@ -11,19 +11,35 @@
 <body>
     <header class="blogHead">
         <div class="wrapper">
-            <!-- top navigation area -->
-            <section class="topNav">
+            <section class="topNav wrapper">
                 <h2>Mindn'Soul</h2>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                            <a href="#about">About</a>
-                            <a href="blog.html">Blog</a>
-                            <a href="contact.html">Contact</a>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </nav> 
+                </nav>
+                
+                <p onclick="toggleMenu()">
+                    <i class="fa fa-bars hidden" ></i>
+                </p>
+                
+                
+                <div class="hiddenMenu hidden">
+    
+                    <nav class="hiddenNav hidden" id="hiddenNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+    
             </section>
             
             <h1>Blog</h1>
@@ -141,5 +157,7 @@
         </div>
     </footer>
         
+    <script src="scripts.js"></script>
+
     </body>
     </html>

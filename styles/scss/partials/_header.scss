@@ -1,5 +1,5 @@
 .mainHead {
-    height: 85vh;
+    min-height: 85vh;
     background-image: url(../assets/home-image-1.jpg);
     background-size: cover;
     background-position: 0px -100px;
@@ -29,6 +29,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .topNav h2,
@@ -41,7 +45,7 @@
     justify-content: space-evenly;
 }
 
-.mainHead section:last-of-type{
+.mainHead .titleBlock{
     display: flex;
     height: 100%;
     .imageContainer {
@@ -50,8 +54,64 @@
             filter: sepia(60%);
         }
     }
-    .welcome {
+}
+
+.welcome {
+    position: relative;
+    top: 170px;
+}
+
+// hidden nav menu
+
+.hiddenMenu {
+    height: 10vh;
+    nav {
         position: relative;
-        top: 170px;
+        color: white;
+        font-size: 4rem;
     }
+}
+
+.hiddenMenu p {
+    width: 100%;
+    text-align: right;
+}
+
+.topNav p i {
+    font-size: 4rem;
+    color: $mainColour;
+    transform: scale(1.5, 1);
+}
+
+// /* slide out menu */
+
+.hiddenNav {
+    position: relative;
+    height: 100vh;
+}
+
+.hiddenNav ul {
+    background: $darkColour;
+    border-right: 5px solid $mainColour;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0px;
+	z-index: 1000;
+	width: 40%; 
+	left: 0%; 
+	top: 0;
+	height: 100%;
+}
+
+.hiddenNav li a {
+	border-bottom: 1px solid grey;
+    display: inline-block;
+    font-family: $secondaryFont;
+    font-size: 3rem;
+    text-decoration: none;
+    color: $lightColour;
+	width: 100%;
+	padding: 20px;
 }

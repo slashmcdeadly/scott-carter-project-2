@@ -15,14 +15,30 @@
             <h2>Mindn'Soul</h2>
             <nav>
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                        <a href="#about">About</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            
+            <p onclick="toggleMenu()">
+                <i class="fa fa-bars hidden" ></i>
+            </p>
+            
+            
+            <div class="hiddenMenu hidden">
+
+                <nav class="hiddenNav hidden" id="hiddenNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
 
         </section>
 
@@ -87,6 +103,14 @@
         </div>
 
     </main>
+
+    <footer>
+        <div>
+            <p>Copyright &copy; 2019 Hacker You</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
     
 </body>
 </html>
