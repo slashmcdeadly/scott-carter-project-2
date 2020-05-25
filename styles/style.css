@@ -720,12 +720,12 @@ footer p {
   line-height: 69px;
   letter-spacing: 10.9px;
   position: relative;
-  top: 150px;
+  top: 100px;
 }
 
 .blogPost {
   position: relative;
-  max-height: 1600px;
+  min-height: 1600px;
 }
 
 .blogPost > picture, .blogPost article {
@@ -772,7 +772,7 @@ aside.ourMission {
   position: absolute;
   right: 0;
   top: 150px;
-  padding-left: 20px;
+  padding: 0px 20px;
   background-color: #555F02;
 }
 
@@ -785,6 +785,10 @@ aside.ourMission h3 {
   font-family: "Dokdo", cursive;
 }
 
+aside.ourMission p {
+  width: 90%;
+}
+
 aside.ourMission ul {
   list-style-type: none;
   padding: 0px 0px 20px 10px;
@@ -793,19 +797,20 @@ aside.ourMission ul {
 aside.ourMission ul li::before {
   content: "•";
   color: #FFC600;
-  font-size: 2rem;
+  font-size: 1.190vw;
   padding-right: 20px;
 }
 
 aside.ourMission ul li {
   padding-bottom: 10px;
+  width: 90%;
 }
 
 aside.ourMission ul li a {
   text-decoration: none;
   color: white;
   font-family: "Lato", sans-serif;
-  font-size: 2rem;
+  font-size: 1.190vw;
   letter-spacing: 2.5px;
 }
 
@@ -884,54 +889,57 @@ input[type=email],
 input[type=text] {
   width: calc(50% - 25px);
   margin-bottom: 50px;
+  font-size: 1.190vw;
+  padding-left: 50px;
+  color: #FAFFFE;
   background-color: #1E140E;
   border: 0;
   border-bottom: 2px solid #FFC600;
   height: 80px;
 }
 
+textarea {
+  padding-left: 50px;
+}
+
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  font-size: 2rem;
+  font-size: 1.190vw;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #FAFFFE;
   line-height: 32px;
   letter-spacing: 2px;
-  padding-left: 50px;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  font-size: 2rem;
+  font-size: 1.190vw;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #FAFFFE;
   line-height: 32px;
   letter-spacing: 2px;
-  padding-left: 50px;
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  font-size: 2rem;
+  font-size: 1.190vw;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #FAFFFE;
   line-height: 32px;
   letter-spacing: 2px;
-  padding-left: 50px;
 }
 
 input::placeholder,
 textarea::placeholder {
-  font-size: 2rem;
+  font-size: 1.190vw;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #FAFFFE;
   line-height: 32px;
   letter-spacing: 2px;
-  padding-left: 50px;
 }
 
 textarea::-webkit-input-placeholder {
@@ -970,7 +978,7 @@ button[type=submit] {
 }
 
 .contactPage header div h2 {
-  font-size: 105vw;
+  font-size: 6.25vw;
   color: #FFC600;
   font-family: "Dokdo", cursive;
   letter-spacing: 10.9px;
@@ -1010,27 +1018,27 @@ button[type=submit] {
   background: #262725;
 }
 
-.contactPage fieldset::-webkit-input-placeholder,
-.contactPage input::-webkit-input-placeholder,
-.contactPage textarea::-webkit-input-placeholder {
+fieldset::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   padding: 40px 0px 0px 30px;
 }
 
-.contactPage fieldset:-ms-input-placeholder,
-.contactPage input:-ms-input-placeholder,
-.contactPage textarea:-ms-input-placeholder {
+fieldset:-ms-input-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   padding: 40px 0px 0px 30px;
 }
 
-.contactPage fieldset::-ms-input-placeholder,
-.contactPage input::-ms-input-placeholder,
-.contactPage textarea::-ms-input-placeholder {
+fieldset::-ms-input-placeholder,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
   padding: 40px 0px 0px 30px;
 }
 
-.contactPage fieldset::placeholder,
-.contactPage input::placeholder,
-.contactPage textarea::placeholder {
+fieldset::placeholder,
+input::placeholder,
+textarea::placeholder {
   padding: 40px 0px 0px 30px;
 }
 
@@ -1069,6 +1077,7 @@ button[type=submit] {
 
 .contactPage ul li {
   padding-right: 20px;
+  list-style: none;
 }
 
 .contactPage ul li a {
@@ -1128,6 +1137,56 @@ button[type=submit] {
   h3 {
     font-size: 4.8vw;
   }
+  .contactPage main section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contactPage fieldset {
+    bottom: 50px;
+    padding: 25px;
+  }
+  .contactPage aside {
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .contactPage main > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactPage aside ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .commentForm fieldset div:first-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input[type=email], input[type=text] {
+    padding-left: 0px;
+    width: 100%;
+  }
+  textarea, textarea::-webkit-input-placeholder {
+    font-size: 1.190vw;
+    padding-left: 20px;
+  }
+  textarea, textarea:-ms-input-placeholder {
+    font-size: 1.190vw;
+    padding-left: 20px;
+  }
+  textarea, textarea::-ms-input-placeholder {
+    font-size: 1.190vw;
+    padding-left: 20px;
+  }
+  textarea, textarea::placeholder {
+    font-size: 1.190vw;
+    padding-left: 20px;
+  }
   .topNav > nav {
     display: none;
   }
@@ -1178,6 +1237,97 @@ button[type=submit] {
   .gallery picture:last-of-type {
     margin-top: 50px;
   }
+  .articles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articles article {
+    width: 100%;
+  }
+  .articleContainerTop,
+  .articleContainerBottom {
+    padding: 40px 0px 20px 0px;
+  }
+  .phone {
+    padding-bottom: 50px;
+  }
+  .articlesTwo picture:first-of-type {
+    top: 120px;
+    left: 50px;
+  }
+  .articlesTwo picture ~ picture {
+    bottom: 120px;
+    right: 50px;
+  }
+  .blogPost {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPost picture {
+    left: -20px;
+  }
+  .blogPost article {
+    width: 90%;
+  }
+  .blogPost > picture img {
+    width: 90%;
+  }
+  aside.ourMission {
+    width: 70%;
+    position: relative;
+    top: -100px;
+    margin: 0 auto;
+  }
+  aside.ourMission ul li a {
+    font-size: 2.4vw;
+  }
+  aside.ourMission h3 {
+    padding-left: 30px;
+  }
+  aside.ourMission p {
+    padding-left: 30px;
+  }
+  .comment1, .comment2 {
+    width: 100%;
+  }
+  .comment1 img, .comment2 img {
+    position: relative;
+    top: 50px;
+  }
+  .commentForm fieldset {
+    width: 100%;
+  }
+  input[type=email],
+  input[type=text],
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    font-size: 2.4vw;
+  }
+  input[type=email],
+  input[type=text],
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    font-size: 2.4vw;
+  }
+  input[type=email],
+  input[type=text],
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    font-size: 2.4vw;
+  }
+  input[type=email],
+  input[type=text],
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 2.4vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1186,6 +1336,29 @@ button[type=submit] {
   }
   .hiddenNav ul {
     width: 60%;
+  }
+  .articlesTwo div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articlesTwo picture {
+    width: 70%;
+    position: relative;
+    bottom: 500px;
+  }
+  .articlesTwo picture:first-of-type {
+    top: 70px;
+  }
+  .articlesTwo picture ~ picture {
+    bottom: 340px;
+  }
+  .articlesTwo article {
+    max-width: 100%;
+  }
+  .articlesTwo article:first-of-type {
+    padding: 70% 0px 80% 0px;
   }
 }
 
