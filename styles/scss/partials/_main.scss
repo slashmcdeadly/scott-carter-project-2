@@ -272,7 +272,7 @@ aside.ourMission ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 75vh;
+    min-height: 75vh;
     position: relative;
 }
 

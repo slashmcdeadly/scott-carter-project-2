@@ -89,7 +89,7 @@
     }
 
     input[type=email], input[type=text] {
-        padding-left: 0px;
+        padding-left: 20px;
         width: 100%;
     }
 
@@ -199,7 +199,7 @@
     aside.ourMission {
         width: 70%;
         position: relative;
-        top: -100px;
+        top: -50px;
         margin: 0 auto;
         ul li a {
             font-size: 2.4vw;
@@ -228,9 +228,14 @@
 
     input[type=email], 
     input[type=text],
+    textarea,
     input::placeholder, 
     textarea::placeholder {
         font-size: 2.4vw;
+    }
+
+    .blogMain fieldset {
+        padding-bottom: 50px;
     }
 }
 
@@ -274,6 +279,14 @@
         margin-bottom: 40px;
     }
 
+    input[type=email], 
+    input[type=text],
+    textarea,
+    input::placeholder, 
+    textarea::placeholder {
+        font-size: 3.2vw;
+    }
+
 }
 
 // FOURTH BREAK POINT
@@ -287,5 +300,13 @@
     }
     h3 {
         font-size: 7vw;
+    }
+
+    input[type=email], 
+    input[type=text],
+    textarea,
+    input::placeholder, 
+    textarea::placeholder {
+        font-size: 4vw;
     }
 }
