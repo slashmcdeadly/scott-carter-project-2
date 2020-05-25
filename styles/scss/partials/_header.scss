@@ -1,3 +1,5 @@
+//main page header
+
 .mainHead {
     min-height: 85vh;
     background-image: url(../assets/home-image-1.jpg);
@@ -9,8 +11,8 @@
     }
     .imageContainer {
         max-width: 40%;
-        position: relative;
-        top: 150px;
+        position: absolute;
+        bottom: 0px;
     }
     .welcome {
         max-width: 40%;
@@ -58,7 +60,8 @@
 
 .welcome {
     position: relative;
-    top: 170px;
+    top: 20vh;
+    left: 40%;
 }
 
 // hidden nav menu
@@ -98,11 +101,18 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 0px;
-	z-index: 1000;
+	z-index: 999;
 	width: 40%; 
-	left: 0%; 
-	top: 0;
-	height: 100%;
+	left: -0%; 
+    top: 0;
+    height: 100%;
+    .logo a {
+        @include titleStyles(6);
+        border-bottom: 0;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        text-transform: none;
+    }
 }
 
 .hiddenNav li a {
@@ -113,5 +123,48 @@
     text-decoration: none;
     color: $lightColour;
 	width: 100%;
-	padding: 20px;
+    padding: 20px;
+    
 }
+
+// INDEX PAGE HEADER STYLINGS END
+
+// BLOG PAGE HEADER START
+
+.blogHead {
+    min-height: 70vh;
+    background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    .topNav {
+        height: 10vh;
+    }
+    h1 {
+        font-size: 105px;
+        line-height: 69px;
+        letter-spacing: 10.9px;
+        position: relative;
+        top: 150px;
+    }
+}
+
+// BLOG PAGE HEADER ENDS
+
+// CONTACT PAGE HEADER STARTS
+
+.contactPage header {
+    min-height: 70vh;
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    div h2 {
+        @include titleStyles(6.25);
+        letter-spacing: 10.9px;
+    }
+}
+
+.contactPage header div {
+    min-height: 45vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+// CONTACT PAGE HEADER ENDS

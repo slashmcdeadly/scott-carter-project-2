@@ -1,3 +1,6 @@
+
+//INDEX PAGE STYLINGS START
+
 main section:nth-of-type(odd){
     background-color: $secondaryDarkColour;
 }
@@ -167,3 +170,261 @@ main section:nth-of-type(even){
         margin: 0;
     }
 }
+
+// INDEX PAGE STYLINGS ENDS
+
+// BLOG PAGE MAIN SECTION BEGINS
+
+.blogPost {
+    position: relative;
+    min-height: 1600px;
+}
+
+.blogPost > picture, .blogPost article {
+    position: relative;
+    bottom: 120px;
+}
+
+.blogPost > picture img {
+    width: 60%;
+    box-shadow: 20px 20px 0 $secondaryColour;
+}
+
+.blogPost article {
+    width: calc(60% + 20px);
+    padding-left: 12%;
+    border-right: 7px solid $secondaryColour;
+    border-bottom: 7px solid $secondaryColour;
+    h2 {
+        margin: 0px 0px 0px 0px;
+        padding-top: 100px;
+    }
+    p {
+        padding-right: 80px;
+        padding-bottom: 10px;
+        letter-spacing: 3px;
+    }
+    &:last-of-type {
+        padding-bottom: 40px;
+    }
+    h3 {
+        font-style: italic; 
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+}
+
+// aside section
+
+aside.ourMission {
+    width: calc(20% + 20px);
+    position: absolute;
+    right: 0;
+    top: 150px;
+    padding: 0px 20px;
+    background-color: $secondaryColour;
+    img {
+        position: relative;
+        bottom: 20px;
+    }
+    h3 {
+        font-family: $primaryFont;
+    }
+    p {
+        width: 90%;
+    }
+}
+
+aside.ourMission ul {
+    list-style-type: none;
+    padding: 0px 0px 20px 10px;
+    li::before {
+        content: "•";
+        color: $mainColour;
+        font-size: 1.190vw;;
+        padding-right: 20px;
+    }
+    li {
+        padding-bottom: 10px;
+        width: 90%;
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+        font-family: $secondaryFont;
+        font-size: 1.190vw;
+        letter-spacing: 2.5px;
+    }
+} 
+
+// comment section
+
+.comments {
+    background-color: $secondaryDarkColour;
+    min-height: 75vh;
+    h2 {
+        color: $lightColour;
+        margin-top: 0px;
+    }
+}
+
+.comments > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75vh;
+    position: relative;
+}
+
+.comment1, .comment2 {
+    display: flex;
+    width: 63%;
+    picture {
+        width: 15%;
+        img {
+            padding-right: 30px;
+        }
+    }
+    div {
+        width: 82%;
+        p:first-of-type {
+            margin-top: 0;
+            color: $mainColour;
+        }
+    }
+}
+
+// comment form style
+
+.commentForm {
+    background-color: $secondaryDarkColour;
+    min-height: 65vh;
+    fieldset {
+        border: 0;
+        margin: 0;
+        width: 63%;
+        display: flex;
+        flex-direction: column;
+        div:first-of-type{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+input[type=email], 
+input[type=text] {
+    width: calc(50% - 25px);
+    margin-bottom: 50px;
+    font-size: 1.190vw;
+    padding-left: 50px;
+    color: $lightColour;
+    background-color: $secondaryDarkColour;
+    border: 0;
+    border-bottom: 2px solid $mainColour;
+    height: 80px;
+}
+
+textarea {
+    padding: 50px;
+    color: $lightColour;
+    font-family: $secondaryFont;
+    font-size: 1.190vw;
+}
+
+input::placeholder {
+    padding-top: 40px;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    font-size: 1.190vw;
+    font-family: $secondaryFont;
+    font-weight: 300;
+    color: $lightColour;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+textarea {
+    width: 100%;
+    height: 220px;
+    background-color: $secondaryDarkColour;
+    border: 2px solid $mainColour;
+    resize: none;
+    margin-bottom: 40px;
+}
+
+button[type=submit] {
+    width: 100%;
+}
+
+//END OF BLOG PAGE MAIN STYLINGS
+
+//CONTACT PAGE MAIN STYLING BEGINS
+
+.contactPage main {
+    background: $secondaryDarkColour;
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    section {
+        width: 70%;
+    }
+}
+
+.contactPage fieldset, 
+.contactPage input,
+.contactPage textarea {
+    background: $darkColour;
+    
+}
+
+.contactPage fieldset {
+    padding: 70px;
+    width: 100%;
+    box-shadow: 20px 20px 0 $mainColour;
+    position: relative;
+    bottom: 150px;
+    textarea {
+        height: 260px;
+    }
+}
+
+.contactPage aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin: 10px 0;
+    }
+    ul {
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+}
+
+// contact page aside
+
+// change logos around, add whatsapp
+
+.contactPage aside p:first-of-type {
+    padding-bottom: 30px;
+}
+
+.contactPage aside li {
+    padding-right: 20px;
+    list-style: none;
+    a {
+        font-size: 2.5rem;
+        i {
+            color: $mainColour;
+        }
+    }
+}
+
+//END OF CONTACT PAGE STYLINGS

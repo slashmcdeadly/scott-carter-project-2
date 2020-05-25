@@ -1,4 +1,6 @@
 
+// FIRST BREAKPOINT
+
 @media (max-width: 1180px) {
 
     // title area media
@@ -16,6 +18,7 @@
     .mainHead .welcome {
         margin: 50px auto;
         top: 0px;
+        left: 0px;
         max-width: 100%;
         text-align: center;
     }
@@ -34,6 +37,8 @@
         margin-top: 30px;
     }
 }
+
+// SECOND BREAKPOINT
 
 @media (max-width: 940px) {
 
@@ -206,6 +211,7 @@
             padding-left: 30px;
         }
     }
+    
 
     .comment1, .comment2 {
         width: 100%;
@@ -227,6 +233,9 @@
         font-size: 2.4vw;
     }
 }
+
+// THIRD BREAKPOINT
+
 @media (max-width: 768px) {
    h1 {
        font-size: 8.9vw;
@@ -261,13 +270,22 @@
         padding: 70% 0px 80% 0px;
     }
    
-
+    .articlesTwo article ~ article {
+        margin-bottom: 40px;
+    }
 
 }
+
+// FOURTH BREAK POINT
 
 @media (max-width: 480px) {
     h1 {
         font-size: 11vw;
     }
-
+    p {
+        font-size: 3.4vw;
+    }
+    h3 {
+        font-size: 7vw;
+    }
 }
