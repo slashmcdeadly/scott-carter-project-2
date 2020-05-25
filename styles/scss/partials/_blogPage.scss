@@ -146,6 +146,7 @@ aside.ourMission ul {
         margin: 0;
         width: 63%;
         display: flex;
+        flex-direction: column;
         div:first-of-type{
             display: flex;
             justify-content: space-between;
