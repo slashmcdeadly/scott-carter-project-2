@@ -22,9 +22,11 @@ main section:nth-of-type(even){
     }
     picture {
         width: calc(30% - 75px);
-        box-shadow: -20px 20px 0 $secondaryColour;
         position: relative;
         bottom: 20px;
+        img {
+            box-shadow: -20px 20px 0 $secondaryColour;
+        }
     }
     h2 {
         margin-bottom: 0px;
@@ -157,7 +159,7 @@ main section:nth-of-type(even){
 
 
 .trials div {
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

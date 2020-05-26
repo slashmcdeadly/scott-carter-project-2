@@ -36,6 +36,12 @@
     .mainHead h1 {
         margin-top: 30px;
     }
+
+    .about {
+        align-items: center;
+        min-height: 60vh;
+        padding-top: 60px;
+    }
 }
 
 // SECOND BREAKPOINT
@@ -302,11 +308,57 @@
         font-size: 7vw;
     }
 
+    button {
+        font-size: 3rem;
+    }
+
     input[type=email], 
     input[type=text],
     textarea,
     input::placeholder, 
     textarea::placeholder {
         font-size: 4vw;
+    }
+
+    .mainHead {
+        min-height: 100vh;
+    }
+
+    .blogHead {
+        min-height: 100vh;
+    }
+
+    .blogPost > picture, .blogPost article {
+        bottom: 0px;
+    }
+
+    .blogPost article h3 {
+        font-size: 1.5rem;
+    }
+
+    .blogPost article h2 {
+        font-size: 4.5rem;
+        padding-bottom: 10px;
+    }
+
+    .blogPost article p {
+        padding-right: 20px;
+    }
+
+    .mainHead .titleBlock .imageContainer img {
+        filter: sepia(00%);
+    }
+
+    .contactPage header div h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .trials div button {
+        margin-bottom: 60px;
+    }
+
+    .trials div h2 {
+        margin-top: 40px;
     }
 }
