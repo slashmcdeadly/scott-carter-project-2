@@ -495,7 +495,7 @@ p {
 }
 
 .contactPage header {
-  min-height: 100vh;
+  min-height: 70vh;
   background-image: url(../assets/contact-image-1.jpg);
   background-size: cover;
 }
@@ -1482,6 +1482,9 @@ footer p {
   .contactPage header div h2 {
     font-size: 4rem;
     text-align: center;
+  }
+  .contactPage header {
+    min-height: 100vh;
   }
   .trials div button {
     margin-bottom: 60px;
